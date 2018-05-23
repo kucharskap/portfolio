@@ -108,12 +108,31 @@
     </section>
     <section id="my-projects">
         <div class="for-opacity">
-            <h1>My projects</h1>
-            <div class="container">
+            <h1 class="margin"><span class="proj-title">My projects</span></h1>
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-4"> <div class="project1"></div></div>
-                    <div class="col-4"> <div class="project2"></div></div>
-                    <div class="col-4"> <div class="project3"></div></div>
+                    <div class="col-4 " >
+                        <div class="my-container">
+                            <img src="images/project1.png" class="project1 image" >
+                        <div class="middle">
+                            <div class="btn-thumb"><a href="https://kucharskap.github.io/maze-game/" target="_blank">Visit</a></div>
+                        </div>
+                        </div>
+                        
+                        {{!-- <div class="proj-title">Maze Game</div> --}}
+                    </div>
+                    <div class="col-4 my-container"> 
+                        <img src="images/project2.png" class="project2 image" >
+                        <div class="middle">
+                            <div class="btn-thumb"><a href="https://happy2help.herokuapp.com/" target="_blank">Visit</a></div>
+                        </div>
+                        </div>
+                    <div class="col-4 my-container"> 
+                        <img src="images/project3.png" class="project3 image" >
+                        <div class="middle">
+                            <div class="btn-thumb"><a href="http://www.my-study-buddy.co" target="_blank">Visit</a></div>
+                        </div>
+                    </div>
                 </div>   
                 </div>
             </div>
@@ -125,9 +144,19 @@
                 <div class="col-5 contact-left">
                     <h4> More about me on: </h4>
                     <div class="row">
-                        <div class="col div-logo"><img src="images/li.png" class="logo"></div>
-                        <div class="col div-logo"><img src="images/fb.png" class="logo"></div>
-                        <div class="col div-logo"><img src="images/gihub.png" class="logo"></div>
+                        <div class="col div-logo">
+                            <a href="http://www.linkedin.com/in/patrycja-kucharska-87a756161" target="_blank">
+                            <img src="images/li.png" class="logo">
+                            </a>
+                        </div>
+                        {{!-- <div class="col div-logo">
+                            <img src="images/fb.png" class="logo">
+                        </div> --}}
+                        <div class="col div-logo">
+                            <a href="https://github.com/kucharskap" target="_blank">
+                            <img src="images/gihub.png" class="logo">
+                            </a>
+                        </div>
                     </div>
                     <h4>or</h4>
                     <div class="row">
@@ -136,12 +165,12 @@
                 </div>
                 <div class="col-7 contact-right">
                     <h3>Contact me directly </h3>
-                    <form class="form-group">
+                    <form class="form-group" method="POST" action="/process-message">
                         <label>E-mail:</label>
-                            <input type="email" name="email" class="form-control" placeholder="your@email.com">
+                            <input type="email" name="senderEmail" class="form-control" placeholder="your@email.com">
                         <br>
                         <label>Message:</label>
-                            <textarea class="form-control" rows="6" placeholder="Message..."></textarea>
+                            <textarea class="form-control" rows="6" placeholder="Message..." name="message"></textarea>
                         <br>
                         <button class="btn btn-outline-secondary">Send</button>
                     </form>
