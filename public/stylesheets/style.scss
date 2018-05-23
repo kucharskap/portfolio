@@ -7,7 +7,7 @@ body {
   font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
 }
-
+//**************************HOME**********************************
 ul{
   background-color: rgba(255, 255, 255, 0.295);
 }
@@ -37,36 +37,18 @@ ul{
   -o-background-size: cover;
 }
 
+
+/*************************************************ABOUT*********************************/
+
 #about{
   height: 110vh;
   background-color: whitesmoke;
   padding-top: 60px;
   padding-bottom: 20px;
 }
-
-#my-projects{
-  height: 90vh;
-  background-image: url('../images/section-background.jpeg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-}
-
-.for-opacity{
-  background-color: rgba(255, 255, 255, 0.295);
-  height: 90vh;
-  padding: 70px;
-}
-
-#contact{
-  height: 90vh;
-  background-color: blue;
-}
-
 .about-right{
   border-left: solid 1px grey;
 }
-/*********LOGOS*************/
 .bulma-div{
   height: 50px;
   width: auto;
@@ -99,7 +81,20 @@ ul{
   height: 100%;
   width: auto;
 }
-/*********LOGOS END*************/
+/**********************************************MY PROJECTS******************************/
+#my-projects{
+  height: 90vh;
+  background-image: url('../images/section-background.jpeg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.for-opacity{
+  background-color: rgba(255, 255, 255, 0.355);
+  height: 90vh;
+  padding: 70px;
+}
 
 .project1,
 .project2,
@@ -115,29 +110,26 @@ ul{
   border: 2px solid grey;
   border-radius: 15px;
 }
-
 .project1{
   background-image: url('../images/project1.png')
 }
-
 .project2{
   background-image: url('../images/project2.png')
 }
-
 .project3{
   background-image: url('../images/project3.png')
 }
-// .project1,
-// .project2,
-// .project3{
-//   height: 35vh;
-//   width: auto;
-// }
+//**********************************CONTACT*************************
 
-// .project1 img,
-// .project2 img,
-// .project3 img{
-//   height: 100%;
-//   width: auto;
-// }
 
+#contact{
+  height: 80vh;
+  background-color: whitesmoke;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.contact-left{
+  text-align: center;
+  border-right: 1px solid grey;
+}

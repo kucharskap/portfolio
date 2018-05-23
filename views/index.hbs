@@ -1,16 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Patrycja Kucharska - Full Stack Web Developer </title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-        crossorigin="anonymous">
-</head>
-
-<body>
 
     <header id="home">
         <ul class="nav justify-content-end">
@@ -123,16 +110,43 @@
         <div class="for-opacity">
             <h1>My projects</h1>
             <div class="container">
-                <div></div>
-                    <div class="project1"></div>
-                    <div class="project2"></div>
-                    <div class="project3"></div>
+                <div class="row">
+                    <div class="col-4"> <div class="project1"></div></div>
+                    <div class="col-4"> <div class="project2"></div></div>
+                    <div class="col-4"> <div class="project3"></div></div>
+                </div>   
                 </div>
             </div>
         </div>
     </section>
     <footer id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-5 contact-left">
+                    <h4> More about me on: </h4>
+                    <div class="row">
+                        <div class="col div-logo"><img src="images/li.png" class="logo"></div>
+                        <div class="col div-logo"><img src="images/fb.png" class="logo"></div>
+                        <div class="col div-logo"><img src="images/gihub.png" class="logo"></div>
+                    </div>
+                    <h4>or</h4>
+                    <div class="row">
+                        <button class="btn btn-success">My resume</button>
+                    </div>
+                </div>
+                <div class="col-7 contact-right">
+                    <h3>Contact me directly </h3>
+                    <form class="form-group">
+                        <label>E-mail:</label>
+                            <input type="email" name="email" class="form-control" placeholder="your@email.com">
+                        <br>
+                        <label>Message:</label>
+                            <textarea class="form-control" rows="6" placeholder="Message..."></textarea>
+                        <br>
+                        <button class="btn btn-outline-secondary">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
     </footer>
-</body>
-
-</html>
