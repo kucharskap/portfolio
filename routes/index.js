@@ -16,7 +16,7 @@ const transport = nodemailer.createTransport({
 })
 
 router.post('/process-message', (req, res, next)=>{
-  const { senderEmail, message } = req.body;
+  const { senderEmail, message, name } = req.body;
     
     transport.sendMail({
       from: "Your Portfolio <website@example.com>",
@@ -24,9 +24,11 @@ router.post('/process-message', (req, res, next)=>{
       subject: `Message from your portfolio`, 
       text: `
       Email: ${senderEmail}
-      Message: ${message}`,
+      Message: ${message}
+      Name: ${name}`,
       html: `
-      <h2>Sender:</h2> ${senderEmail} <br>
+      <h2>Sender's email:</h2> ${senderEmail} <br>
+      <h2>Sender's name:</h2>${name}<br>
       <h2>Message:</h2> ${message}`
     })
     .then((result)=>{
@@ -37,4 +39,10 @@ router.post('/process-message', (req, res, next)=>{
     })
   });
 
+router.get('/my-resume', (req, res, next)=>{
+  res.render('resume')
+})
+
+
 module.exports = router;
+
