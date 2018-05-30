@@ -1,0 +1,15 @@
+.layout-projects{
+    /* background-image: url('../images/portfolio-background.jpeg'); */
+    /* opacity: 0.5; */
+    background-color: whitesmoke;
+    /* -webkit-background-size: cover; */
+    /* -moz-background-size: cover; */
+    /* -o-background-size: cover; */
+    min-height: 100vh;
+}
+
+.article{
+    min-width: 80vw;
+    min-height: 100vh;
+    background-color: white;
+}

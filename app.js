@@ -44,6 +44,8 @@ app.set('view engine', 'hbs');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
+app.set("layout-projects", __dirname + "/views/layout-projects");
+hbs.registerPartials(__dirname + "/views/projects");
 
 
 // default value for title local

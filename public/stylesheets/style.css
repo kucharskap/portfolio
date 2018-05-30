@@ -189,4 +189,27 @@ ul {
 .for-cv {
   height: 99vh; }
 
+@media (max-width: 800px) {
+  .body-big {
+    display: none; }
+  .body-small {
+    background-image: url("../images/portfolio-background2.jpeg");
+    padding-top: 25vh;
+    margin: 0;
+    min-height: 100vh;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover; }
+  div {
+    background-color: rgba(255, 255, 255, 0.45);
+    font-size: 5vh;
+    height: 50vh;
+    width: 50vw;
+    margin-left: 25vw;
+    padding: 5%; } }
+
+@media (min-width: 800px) {
+  .body-small {
+    display: none; } }
+
 /*# sourceMappingURL=style.css.map */
