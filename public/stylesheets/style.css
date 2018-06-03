@@ -209,10 +209,10 @@ ul {
     padding: 0; } }
 
 .to-scroll {
-  text-align: center;
   display: flex;
   overflow-x: auto;
-  padding-bottom: 7px; }
+  padding-bottom: 7px;
+  justify-content: center; }
 
 .logo-titles {
   text-align: center;

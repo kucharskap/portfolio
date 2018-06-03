@@ -253,7 +253,6 @@ body {
     margin-bottom: 20px;
     // border-bottom: 1px solid grey;
   }
-
   .about-left img{
     width: 40vw;
     height: auto;
@@ -297,10 +296,10 @@ body {
   }
 }
    .to-scroll{
-    text-align: center;
     display: flex;
     overflow-x: auto;
     padding-bottom: 7px;
+    justify-content: center;
     }
     
   .logo-titles{
