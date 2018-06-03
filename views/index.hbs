@@ -1,39 +1,44 @@
-    <header id="home">
-        <ul class="nav justify-content-end">
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <span>Home</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#about">
-                    <span>About</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#my-projects">
-                    <span>My projects</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contact">
-                    <span>Contact</span>
-                </a>
-            </li>
-        </ul>
+<header id="home">
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <span>Home</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#about">
+                <span>About</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#my-projects">
+                <span>My projects</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#contact">
+                <span>Contact</span>
+            </a>
+        </li>
+        {{!-- <li class="nav-item icon">
+            <a href="javascript:void(0);" class="nav-link" onclick="myFunction()">
+                <span><i class="fa fa-bars"></i></span>
+            </a>
+        </li> --}}
+    </ul>
 
-        <div class="intro">
+    <div class="intro">
         <h1 class="name">Patrycja Kucharska</h1>
         <h3 class="under-name">Full Stack Web Developer</h3>
-        </div>
-    </header>
+    </div>
+</header>
 
-    <section id="about">
+<section id="about">
     {{> about}}
-    </section>
-    <section id="my-projects">
+</section>
+<section id="my-projects">
     {{> projectlist}}
-    </section>
-    <footer id="contact">
+</section>
+<footer id="contact">
     {{> contact}}
-    </footer>
+</footer>

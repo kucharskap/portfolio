@@ -10,9 +10,9 @@ ul {
   background-color: rgba(255, 255, 255, 0.295); }
 
 .nav-item {
-  font-size: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px; }
+  font-size: 2vw;
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh; }
 
 .nav-link span {
   padding: 1px 4px;
@@ -31,7 +31,7 @@ ul {
   -o-background-size: cover; }
 
 .intro {
-  margin: 150px; }
+  margin: 10vw; }
 
 .name,
 .under-name {
@@ -42,9 +42,6 @@ ul {
   background-color: whitesmoke;
   padding-top: 60px;
   padding-bottom: 20px; }
-
-.about-right {
-  border-left: solid 1px grey; }
 
 .about-left {
   text-align: center; }
@@ -130,8 +127,8 @@ ul {
   -o-background-size: cover;
   background-repeat: no-repeat;
   margin: 20px;
-  height: 40vh;
-  width: auto;
+  height: auto;
+  width: 100%;
   border: 2px solid whitesmoke;
   border-radius: 15px; }
 
@@ -162,8 +159,8 @@ ul {
   padding-bottom: 50px; }
 
 .contact-left {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 5vw;
+  padding-right: 5vw;
   text-align: center; }
 
 .contact-left h4 {
@@ -175,18 +172,33 @@ ul {
 
 @media (min-width: 800px) {
   .contact-left {
-    border-right: 1px solid grey; } }
+    border-right: 1px solid grey; }
+  .about-right {
+    border-left: solid 1px grey; }
+  .separate-xs {
+    display: none; } }
 
 @media (max-width: 800px) {
   .contact-left {
     padding-bottom: 20px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid grey; }
+    margin-bottom: 20px; }
+  .about-left img {
+    width: 40vw;
+    height: auto; }
+  .about-left {
+    margin-bottom: 15px; }
+  .name,
+  .under-name {
+    font-size: 5vw; }
+  .nav-item {
+    font-size: 2.5vw;
+    padding-top: 1.2vh;
+    padding-bottom: 1.2vh; }
+  .separate-xs {
+    width: 80%; }
   .project1,
   .project2,
   .project3 {
-    height: auto;
-    width: 100%;
     margin-left: 0;
     margin-right: 0; }
   .for-opacity {
@@ -197,7 +209,15 @@ ul {
     padding: 0; } }
 
 .to-scroll {
+  text-align: center;
   display: flex;
   overflow-x: auto; }
+
+.logo-titles {
+  text-align: center;
+  padding-top: 5vh; }
+
+.between-logos {
+  width: 40vw; }
 
 /*# sourceMappingURL=style.css.map */
