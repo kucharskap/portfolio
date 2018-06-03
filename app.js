@@ -8,6 +8,7 @@ const hbs          = require('hbs');
 const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
+const fs           = require('fs')
 
 
 mongoose.Promise = Promise;
@@ -56,5 +57,14 @@ app.locals.title = 'Patrycja Kucharska - Full Stack Web Developer';
 const index = require('./routes/index');
 app.use('/', index);
 
+
+app.get('/PatrycjaKucharskaCV', (req, res, next)=>{
+  var filePath = "/public/images/CV.pdf";
+
+  fs.readFile(__dirname + filePath ,  (err,data)=>{
+      res.contentType("application/pdf");
+      res.send(data);
+  });
+})
 
 module.exports = app;

@@ -2,6 +2,7 @@ const express = require('express');
 const nodemailer = require('nodemailer');
 const router  = express.Router();
 const hbs = require('hbs');
+const fs = require('fs');
 
 /* GET home page */
 router.get('/', (req, res, next) => {
@@ -40,9 +41,7 @@ router.post('/process-message', (req, res, next)=>{
     })
 });
 
-router.get('/my-resume', (req, res, next)=>{
-  res.render('resume')
-})
+
 
 // router.get('/projects', (req, res, next) => {
 //   res.render('layout-projects');
