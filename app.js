@@ -47,6 +47,7 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
 app.set("layout-projects", __dirname + "/views/layout-projects");
 hbs.registerPartials(__dirname + "/views/projects");
+hbs.registerPartials(__dirname + "/views/main");
 
 
 // default value for title local
