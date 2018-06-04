@@ -176,7 +176,9 @@ ul {
   .about-right {
     border-left: solid 1px grey; }
   .separate-xs {
-    display: none; } }
+    display: none; }
+  .to-scroll {
+    justify-content: center; } }
 
 @media (max-width: 800px) {
   .contact-left {
@@ -211,8 +213,7 @@ ul {
 .to-scroll {
   display: flex;
   overflow-x: auto;
-  padding-bottom: 7px;
-  justify-content: center; }
+  padding-bottom: 7px; }
 
 .logo-titles {
   text-align: center;
