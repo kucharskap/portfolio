@@ -19,7 +19,8 @@ const transport = nodemailer.createTransport({
 
 router.post('/process-message', (req, res, next)=>{
   const { senderEmail, message, name } = req.body;
-    
+  let success = false;
+  
     transport.sendMail({
       from: "Your Portfolio <website@example.com>",
       to: 'kucharskap@gmail.com',
@@ -35,6 +36,7 @@ router.post('/process-message', (req, res, next)=>{
     })
     .then((result)=>{
       res.redirect('/#contact');
+      success = true;
     })
     .catch((err)=>{
       next(err);
