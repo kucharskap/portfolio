@@ -1,4 +1,10 @@
 <div class="col-lg-7 col-xs-12 contact-right">
+    {{#if error}}
+    <h1>Error sending message</h1>
+    {{/if}}
+    {{#if success}}
+    <h1>Success</h1>
+    {{/if}}
     <h3>Contact me directly </h3>
     <form class="form-group" method="POST" action="/process-message">
         <label>E-mail:</label>

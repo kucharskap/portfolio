@@ -1,0 +1,20 @@
+.contact a {
+  color: black;
+  text-decoration-line: none;
+}
+
+.contact {
+  background-color: whitesmoke;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.contact-left {
+  padding-left: 5vw;
+  padding-right: 5vw;
+  text-align: center;
+}
+
+.contact-left h4 {
+  margin: 30px;
+}

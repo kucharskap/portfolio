@@ -1,0 +1,63 @@
+.my-projects {
+  height: auto;
+  padding: 25px;
+  /* background-color: #818184; */
+  background-image: url("../images/section-background.jpeg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+}
+
+.cont-descrtipion {
+  display: flex;
+  align-items: center;
+}
+
+.for-opacity {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 70px;
+}
+
+.my-projects a {
+  color: black;
+}
+.my-projects a:hover {
+  color: white;
+  text-decoration-line: none;
+}
+
+.project1,
+.project2,
+.project3 {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-repeat: no-repeat;
+  margin: 20px;
+  height: auto;
+  width: 100%;
+  border: 2px solid whitesmoke;
+  border-radius: 15px;
+}
+
+.proj-title {
+  background-color: whitesmoke;
+  padding: 3px 6px;
+  border-radius: 15px;
+}
+
+.margin {
+  margin-bottom: 3vw;
+}
+
+.my-projects ul {
+  text-align: left;
+  list-style-type: none;
+  background-color: transparent;
+}
+
+.for-flex{
+  display: flex;
+  flex-direction: row-reverse;
+}

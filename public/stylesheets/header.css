@@ -1,0 +1,37 @@
+.nav {
+  background-color: rgba(255, 255, 255, 0.295);
+}
+
+.nav-item {
+  font-size: 2vw;
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
+}
+
+.nav-link span {
+  padding: 1px 4px;
+  color: black;
+}
+
+.nav-link span:hover {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+
+.home {
+  background-image: url("../images/portfolio-background2.jpeg");
+  height: 90vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.intro {
+  margin: 10vw;
+}
+
+.name,
+.under-name {
+  font-family: "Montserrat", sans-serif;
+}

@@ -1,4 +1,4 @@
-<header id="home">
+<header id="home" class="home">
     <ul class="nav justify-content-end">
         <li class="nav-item">
             <a class="nav-link" href="#">
@@ -20,11 +20,6 @@
                 <span>Contact</span>
             </a>
         </li>
-        {{!-- <li class="nav-item icon">
-            <a href="javascript:void(0);" class="nav-link" onclick="myFunction()">
-                <span><i class="fa fa-bars"></i></span>
-            </a>
-        </li> --}}
     </ul>
 
     <div class="intro">
@@ -33,12 +28,12 @@
     </div>
 </header>
 
-<section id="about">
+<section id="about" class="about">
     {{> about}}
 </section>
-<section id="my-projects">
+<section id="my-projects" class="my-projects">
     {{> projectlist}}
 </section>
-<footer id="contact">
+<footer id="contact" class="contact">
     {{> contact}}
 </footer>
